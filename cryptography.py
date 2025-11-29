@@ -10,7 +10,7 @@ def caesar_decrypt(encrypted_message, key):
     cipher = str.maketrans(string.ascii_lowercase, string.ascii_lowercase[shift:] + string.ascii_lowercase[:shift])
     messsage = encrypted_message.translate(cipher)
     return messsage
-message = "Hi my name is bobby"
+message = input("Enter the message to encrypt: ")
 key = 3
 encrypted_message = caesar_encrypt(message, key)
 print(f"encrypted_message: {encrypted_message}")
